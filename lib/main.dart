@@ -35,12 +35,18 @@ class HomePage extends StatelessWidget {
     ),
       body: Center(
         child: GridView.count(crossAxisCount: 2,
-        children: List.generate(100, (index) {
-            return Center(
-              child: Text(
-                'Item $index',
-                style: Theme.of(context).textTheme.headlineSmall,
-              ),
+        children: List.generate(countriesList.length, (index) {
+            return Container(
+              padding: const EdgeInsets.symmetric(vertical: 10),
+              child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(countriesList[index].title, style: const TextStyle(fontSize: 22)),
+                    Image.network(countriesList[index].photoPath),
+                    Text("Размер населения: ${countriesList[index].population}", style: const TextStyle(fontSize: 22)),
+                    Text("Общая площадь: ${countriesList[index].area}", style: const TextStyle(fontSize: 22))
+                  ],
+                )
             );
           }
         )
@@ -61,10 +67,10 @@ class Country{
 
 List<Country> countriesList = [
  Country(1, "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_Algeria.svg/640px-Flag_of_Algeria.svg.png", "Алжирская Народная Демократическая Республика", "2 381 740", "39 666 519"),
- Country(2, "", "", "", ""),
- Country(3, "", "", "", ""),
- Country(4, "", "", "", ""),
- Country(5, "", "", "", ""),
+ Country(2, "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Flag_of_Angola.svg/640px-Flag_of_Angola.svg.png", "Республика Ангола", "1 246 700", "25 021 974"),
+ Country(3, "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Benin.svg/640px-Flag_of_Benin.svg.png", "Республика Бенин", "112 622", "10 315 244"),
+ Country(4, "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_Botswana.svg/640px-Flag_of_Botswana.svg.png", "Республика Ботсвана", "581 726", "2 262 485"),
+ Country(5, "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Flag_of_Burkina_Faso.svg/640px-Flag_of_Burkina_Faso.svg.png", "Буркина-Фасо", "274 000", "18 450 494"),
  Country(6, "", "", "", ""),
  Country(7, "", "", "", ""),
  Country(8, "", "", "", ""),
