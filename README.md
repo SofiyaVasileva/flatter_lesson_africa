@@ -1,16 +1,5 @@
-# vasilueva_africa
+# Васильева Софья
 
-A new Flutter project.
+## Проекция 15-ти Африканских стран
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img width="649" alt="Снимок экрана 2024-02-27 в 14 39 21" src="https://github.com/SofiyaVasileva/flatter_lesson_africa/assets/91559612/e3b22ff8-aeda-422e-9266-fef0488f93f9">
